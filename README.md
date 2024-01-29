@@ -1,21 +1,21 @@
-# Project 3: Around The U.S.
+# Project 3: Around The U.S. by Krystle Ta
 
 ### Overview  
 
-* Intro  
-* Figma  
-* Images  
+* Description 
+* Technologies and techniques  
+* Link to the project  
   
-**Intro**
+**Description**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This project is all about incorporating responsive design using grids and flexbox. It consists of a simple header, a profile block of an avatar, name, description and an add button. Also a gallery of images and it's name with a like button. The website should be implemented so that it is responsive and displays appropriately on smaller screen sizes.
+
+**Technologies and  techniques**  
   
-**Figma**  
+The technologies and techniques used are grid layouts, media queries, flex box and a simple ellipsis function to truncate long text.
   
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
+**Link to the project**  
   
-**Images**  
+* [Link to the project on Github](https://krystleta.github.io/se_project_aroundtheus/index.html)  
   
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
