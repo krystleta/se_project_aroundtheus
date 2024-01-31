@@ -2,3 +2,11 @@
   color: #545454;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__content {
+    font-size: 14px;
+    line-height: 0.8;
+    margin-left: 19px;
+  }
+}

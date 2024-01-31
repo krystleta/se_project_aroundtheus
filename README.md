@@ -5,6 +5,7 @@
 * Description 
 * Technologies and techniques  
 * Link to the project  
+* Link to video recording of project
   
 **Description**
   
@@ -18,4 +19,7 @@ The technologies and techniques used are grid layouts, media queries, flex box a
   
 * [Link to the project on Github](https://krystleta.github.io/se_project_aroundtheus/index.html)  
   
-
+**Link to video recording of project**  
+  
+* [Link to the video recording](https://krystleta.github.io/se_project_aroundtheus/index.html)  
+  
