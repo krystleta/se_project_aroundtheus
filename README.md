@@ -21,5 +21,5 @@ The technologies and techniques used are grid layouts, media queries, flex box a
   
 **Link to video recording of project**  
   
-* [Link to the video recording](https://krystleta.github.io/se_project_aroundtheus/index.html)  
+* [Link to the video recording](https://drive.google.com/file/d/1nG-anMVI2TLUPzJTkif6o7Y67F6WP9oR/view?usp=sharing)  
   
