@@ -1,25 +1,21 @@
-# Project 3: Around The U.S. by Krystle Ta
+# Project 4 - Stage 1: Around The U.S. by Krystle Ta
 
 ### Overview  
 
 * Description 
 * Technologies and techniques  
 * Link to the project  
-* Link to video recording of project
   
 **Description**
   
-This project is all about incorporating responsive design using grids and flexbox. It consists of a simple header, a profile block of an avatar, name, description and an add button. Also a gallery of images and it's name with a like button. The website should be implemented so that it is responsive and displays appropriately on smaller screen sizes.
+The first stage of Project 4 is a continuation of the Around the U.S. project and it is about setting up the groundwork to allow users to input data into a form on the webpage and it'll dynamically update the web page content based on the user input. 
 
 **Technologies and  techniques**  
   
-The technologies and techniques used are grid layouts, media queries, flex box and a simple ellipsis function to truncate long text.
+The technologies and techniques used are Javascript arrays.
   
 **Link to the project**  
   
 * [Link to the project on Github](https://krystleta.github.io/se_project_aroundtheus/index.html)  
-  
-**Link to video recording of project**  
-  
-* [Link to the video recording](https://drive.google.com/file/d/1nG-anMVI2TLUPzJTkif6o7Y67F6WP9oR/view?usp=sharing)  
+
   
