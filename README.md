@@ -1,4 +1,4 @@
-# Project 4 - Stage 3: Around The U.S. by Krystle Ta
+# Project 4 - Final Stage: Around The U.S. by Krystle Ta
 
 ### Overview  
 
@@ -9,11 +9,11 @@
 **Description**
   
 Project 4 is a continuation of the Around the U.S. project and it is about setting up the groundwork to allow users to input data into a form on the webpage and it'll dynamically update the web page content based on the user input. 
-Stage 3 involves implementing event listeners to the edit and close buttons.
+The final stage involves implementing the functionality to update the user profile based on the values entered in the pop up modal and dynamically rendering the cards based on the array object values being passed into a function to display the cards using a template.
 
 **Technologies and  techniques**  
   
-The technologies and techniques used are Javascript arrays, flexbox.
+The technologies and techniques used are Javascript arrays, eventlisters and HTML template cloning.
 
   
 **Link to the project**  
