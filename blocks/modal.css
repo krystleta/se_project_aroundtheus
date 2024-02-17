@@ -10,7 +10,7 @@
   padding: 19px;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -82,5 +82,22 @@
   .modal__close {
     bottom: calc(100% + 13px);
     left: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal__container {
+    width: 282px;
+    height: 322px;
+  }
+  .modal__form {
+    margin: 25px 22px 0;
+  }
+  .modal__form .form__button {
+    width: 238px;
+    font-size: 14px;
+  }
+  .modal__heading {
+    margin: 0 0 40px;
   }
 }
