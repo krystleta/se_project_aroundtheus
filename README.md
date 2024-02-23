@@ -1,4 +1,4 @@
-# Project 4 - Final Stage: Around The U.S. by Krystle Ta
+# Project 5 - Around The U.S. by Krystle Ta
 
 ### Overview  
 
@@ -8,8 +8,7 @@
   
 **Description**
   
-Project 4 is a continuation of the Around the U.S. project and it is about setting up the groundwork to allow users to input data into a form on the webpage and it'll dynamically update the web page content based on the user input. 
-The final stage involves implementing the functionality to update the user profile based on the values entered in the pop up modal and dynamically rendering the cards based on the array object values being passed into a function to display the cards using a template.
+Project 5 now allows us to add a card with a title and image source. The functionality to like and delete a card has been implemented. We can also see an image preview of each card upon clicking on the desired image.
 
 **Technologies and  techniques**  
   

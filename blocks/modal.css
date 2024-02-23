@@ -6,12 +6,32 @@
   bottom: 0;
   right: 0;
   z-index: 999;
-  display: none;
   padding: 19px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear
+}
+
+/*Preview Image Modal*/
+.preview-image-modal__container {
+  position: relative;
+  margin: auto;
+}
+
+.preview-image__image {
+  max-height: 540px;
+}
+
+.preview-image__description {
+  font-size: 12px;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 .modal_opened {
   display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -52,7 +72,7 @@
   margin: 35px;
 }
 
-.modal__form .form__input {
+.modal__form .modal_input {
   border: none;
   border-bottom: 1px solid rgba(0,0,0, 0.2);
   padding-bottom: 10px;
@@ -99,5 +119,15 @@
   }
   .modal__heading {
     margin: 0 0 40px;
+  }
+  .preview-image__image {
+    max-width: 240px;
+  }
+  .modal__close_type_preview {
+    width: 30px;
+    height: 30px;
+    bottom: calc(100% + 5px);
+    left: calc(100% + 5px);
+    background-size: contain;
   }
 }
