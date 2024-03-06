@@ -54,28 +54,32 @@
         <button class="modal__close"></button>
         <form class="modal__form form">
           <p class="modal__heading">Edit profile</p>
-          <input
-            id="profile-name"
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="modal__input modal__input_type_name"
-            required
-            maxlength="40"
-            minlength="2"
-          />
-          <span class="modal__error" id="profile-name-error"></span>
-          <input
-            id="profile-description"
-            type="text"
-            name="description"
-            placeholder="Description"
-            class="modal__input modal__input_type_description"
-            required
-            maxlength="200"
-            minlength="2"
-          />
-          <span class="modal__error" id="profile-description-error"></span>
+          <label class="modal__label">
+            <input
+              id="profile-name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="modal__input modal__input_type_name"
+              required
+              maxlength="40"
+              minlength="2"
+            />
+            <span class="modal__error" id="profile-name-error"></span>
+          </label>
+          <label class="modal__label">
+            <input
+              id="profile-description"
+              type="text"
+              name="description"
+              placeholder="Description"
+              class="modal__input modal__input_type_description"
+              required
+              maxlength="200"
+              minlength="2"
+            />
+            <span class="modal__error" id="profile-description-error"></span>
+          </label>
           <button class="modal__button" type="submit">Save</button>
         </form>
       </div>
@@ -84,29 +88,39 @@
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
         <button class="modal__close"></button>
-        <form class="modal__form form" >
+        <form class="modal__form form">
           <p class="modal__heading">New place</p>
-          <input
-            id="card-title"
-            type="text"
-            name="Title"
-            placeholder="Title"
-            class="modal__input modal__input_type_title"
-            required
-            maxlength="30"
-            minlength="1"
-          />
-          <span class="modal__error" id="card-title-error"></span>
-          <input
-            id="card-image-url"
-            type="url"
-            name="URL"
-            placeholder="Image URL"
-            class="modal__input modal__input_type_url"
-            required
-          />
-          <span class="modal__error" id="card-image-url-error"></span>
-          <button class="modal__button modal__button_disabled" type="submit" disabled>Save</button>
+          <label class="modal__label">
+            <input
+              id="card-title"
+              type="text"
+              name="Title"
+              placeholder="Title"
+              class="modal__input modal__input_type_title"
+              required
+              maxlength="30"
+              minlength="1"
+            />
+            <span class="modal__error" id="card-title-error"></span>
+          </label>
+          <label class="modal__label">
+            <input
+              id="card-image-url"
+              type="url"
+              name="URL"
+              placeholder="Image URL"
+              class="modal__input modal__input_type_url"
+              required
+            />
+            <span class="modal__error" id="card-image-url-error"></span>
+          </label>
+          <button
+            class="modal__button modal__button_disabled"
+            type="submit"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -114,22 +128,14 @@
     <div class="modal" id="image-preview-modal">
       <div class="preview-image-modal__container">
         <button class="modal__close modal__close_type_preview"></button>
-        <img
-          class="preview-image__image"
-          src=""
-          alt=""
-        />
+        <img class="preview-image__image" src="" alt="" />
         <p class="preview-image__description"></p>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
-        <img
-          class="card__image"
-          src=""
-          alt=""
-        />
+        <img class="card__image" src="" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button
