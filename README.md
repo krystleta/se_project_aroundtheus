@@ -1,4 +1,4 @@
-# Project 6 - Around The U.S. by Krystle Ta
+# Project 7 - Around The U.S. by Krystle Ta
 
 ### Overview  
 
@@ -8,11 +8,11 @@
   
 **Description**
   
-Project 6 involves implementing form validation by checking whether the input fields for both editing profile and adding a new card contain required content before the Save button will update the content.
+Project 7 involves refactoring code by implementing new classes Card and FormValidator and moving functions across from validation.js and importing these classes into index.js.
 
 **Technologies and  techniques**  
   
-The technologies and techniques used are Javascript form validation using event listeners for click and key events.
+The technologies and techniques used are OOP to demonstrate instantiating classes and using 'this'.
 
   
 **Link to the project**  
