@@ -5,6 +5,7 @@ import PopupWithForm from "../components/PopupWithForm.js";
 import PopupWithImage from "../components/PopupWithImage.js";
 import UserInfo from "../components/UserInfo.js";
 import { initialCards, selectors, formValidationConfig } from "../utils/constants.js";
+import '../pages/index.css';
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                    CONSTANTS                                   ||
