@@ -18,6 +18,6 @@ The technologies and techniques used are refactoring Classes using inheritance w
   
 **Link to the project**  
   
-* [Link to the project on Github](https://krystleta.github.io/se_project_aroundtheus/index.html)  
+* [Link to the project on Github](https://krystleta.github.io/se_project_aroundtheus/src/index.html)  
 
   
