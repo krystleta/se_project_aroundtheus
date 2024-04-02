@@ -63,6 +63,7 @@ function renderCard(item) {
 // ! ||                                 Event Listeners                                ||
 // ! ||--------------------------------------------------------------------------------||
 addCardAddButton.addEventListener("click", () => {
+  cardFormValidator.resetValidation();
   newCardPopup.open();
   cardFormValidator.toggleButtonState();
 });
@@ -71,6 +72,7 @@ updateProfileButton.addEventListener("click", () => {
   const userData = userInfo.getUserInfo();
   profileHeadingInput.value = userData.userName;
   profileDescriptionInput.value = userData.userDescription;
+  editProfileFormValidator.resetValidation();
   updateProfilePopup.open();
 });
 
