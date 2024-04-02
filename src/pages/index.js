@@ -16,9 +16,10 @@ const cardFormElement = document.querySelector(selectors.cardPopup);
 const profileFormElement = document.querySelector(selectors.profilePopup);
 const profileHeadingInput = profileFormElement.querySelector(selectors.profileName);
 const profileDescriptionInput = profileFormElement.querySelector(selectors.profileDescription);
+const newImagePopup = new PopupWithImage(selectors.cardImagePopup);
+
 const editProfileFormValidator = new FormValidator(formValidationConfig, profileFormElement);
 const cardFormValidator = new FormValidator(formValidationConfig, cardFormElement);
-
 editProfileFormValidator.enableValidation();
 cardFormValidator.enableValidation();
 
@@ -64,7 +65,6 @@ function renderCard(item) {
 // ! ||                                 Event Listeners                                ||
 // ! ||--------------------------------------------------------------------------------||
 addCardAddButton.addEventListener("click", () => {
-  cardFormValidator.resetValidation();
   newCardPopup.open();
   cardFormValidator.toggleButtonState();
 });
@@ -83,11 +83,9 @@ updateProfileButton.addEventListener("click", () => {
 function handleAddCardFormSubmit(data) {
   const card = renderCard(data);
   cardSection.addItem(card);
-  cardFormValidator.toggleButtonState();
 }
 
 function handleImageClick(name, link) {
-  const newImagePopup = new PopupWithImage(selectors.cardImagePopup);
   newImagePopup.setEventListeners();
   newImagePopup.open(name, link);
 }
