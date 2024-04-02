@@ -17,7 +17,7 @@ const profileFormElement = document.querySelector(selectors.profilePopup);
 const profileHeadingInput = profileFormElement.querySelector(selectors.profileName);
 const profileDescriptionInput = profileFormElement.querySelector(selectors.profileDescription);
 const newImagePopup = new PopupWithImage(selectors.cardImagePopup);
-
+newImagePopup.setEventListeners();
 const editProfileFormValidator = new FormValidator(formValidationConfig, profileFormElement);
 const cardFormValidator = new FormValidator(formValidationConfig, cardFormElement);
 editProfileFormValidator.enableValidation();
@@ -86,7 +86,6 @@ function handleAddCardFormSubmit(data) {
 }
 
 function handleImageClick(name, link) {
-  newImagePopup.setEventListeners();
   newImagePopup.open(name, link);
 }
 
