@@ -16,4 +16,8 @@ export default class PopupConfirm extends Popup {
     });
     super.setEventListeners();
   }
+
+  setSubmitAction(action) {
+    this._handleFormSubmit = action;
+  }
 }

@@ -165,7 +165,16 @@ function handleProfileSubmit(userData) {
 
 function handleDeleteCard(_id) {
   deletePopup.open();
-  api.deleteCard(_id);
+  deletePopup.setSubmitAction(() => {
+    api
+      .deleteCard(_id)
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.error(`Error: ${err}`);
+      });
+  });
 }
 
 function handleLikeIcon(_id, _isLiked) {
