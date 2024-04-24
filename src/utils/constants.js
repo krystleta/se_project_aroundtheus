@@ -20,6 +20,9 @@ export const selectors = {
   avatarPopup: "#avatar-edit-modal",
   avatarEditButton: "#avatar-profile-edit-button",
   avatarURL: ".modal__input_type_url",
+  savingButtonText: "Saving...",
+  submitButtonSelector: ".modal__button",
+  saveButtonDefaultText: "Save",
 }
 
 export const formValidationConfig = {

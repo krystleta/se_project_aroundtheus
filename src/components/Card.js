@@ -38,17 +38,22 @@ export default class Card {
     });
   }
 
-  handleLikeIcon(isLiked) {
-    this._isLiked = isLiked;
-    this._renderLikeIcon();
-  }
-
   _renderLikeIcon() {
     if (this._isLiked) {
       this._likeButton.classList.add(cardselectors.cardLikeToggle);
     } else {
       this._likeButton.classList.remove(cardselectors.cardLikeToggle);
     }
+  }
+
+  handleLikeIcon(isLiked) {
+    this._isLiked = isLiked;
+    this._renderLikeIcon();
+  }
+
+  handleRemoveCard() {
+    this._cardElement.remove();
+    this._cardElement = null;
   }
 
   generateCard() {

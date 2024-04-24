@@ -137,6 +137,7 @@ function handleValidation(form) {
 }
 
 function handleAddCardFormSubmit(data) {
+  this.showButtonProgress(true);
   api
     .addNewCard(data.name, data.link)
     .then((res) => {
@@ -146,6 +147,7 @@ function handleAddCardFormSubmit(data) {
     .catch((err) => {
       console.error(`Error: ${err}`);
     });
+    this.showButtonProgress(false);
 }
 
 function handleImageClick(name, link) {
@@ -153,6 +155,7 @@ function handleImageClick(name, link) {
 }
 
 function handleProfileSubmit(userData) {
+  this.showButtonProgress(true);
   api
     .updateUserInfo(userData.name, userData.about)
     .then((user) => {
@@ -161,6 +164,7 @@ function handleProfileSubmit(userData) {
     .catch((err) => {
       console.error(`Error: ${err}`);
     });
+    this.showButtonProgress(false);
 }
 
 function handleDeleteCard(_id) {
@@ -169,7 +173,7 @@ function handleDeleteCard(_id) {
     api
       .deleteCard(_id)
       .then((res) => {
-        console.log(res)
+        this.handleRemoveCard();
       })
       .catch((err) => {
         console.error(`Error: ${err}`);
@@ -189,6 +193,7 @@ function handleLikeIcon(_id, _isLiked) {
 }
 
 function handleEditAvatar(data) {
+  this.showButtonProgress(true);
   api
     .updateProfilePicture(data.avatar)
     .then((user) => {
@@ -197,4 +202,5 @@ function handleEditAvatar(data) {
     .catch((err) => {
       console.error(`Error: ${err}`);
     });
+    this.showButtonProgress(false);
 }
