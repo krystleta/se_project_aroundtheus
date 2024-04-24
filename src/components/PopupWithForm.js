@@ -30,7 +30,7 @@ export default class PopupWithForm extends Popup {
     super.setEventListeners();
   }
 
-  showButtonProgress = (showButtonProgress) => {
+  showButtonProgress(showButtonProgress) {
      if (showButtonProgress) {
        this._submitButtonElement.textContent = this._progressButtonText;
      } else {
