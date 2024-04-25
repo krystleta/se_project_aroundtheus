@@ -145,6 +145,7 @@ function handleAddCardFormSubmit(cardData) {
     .then((res) => {
       const card = renderCard(res);
       cardSection.addItem(card);
+      newCardPopup.reset();
       newCardPopup.close();
     })
     .catch((err) => {
@@ -165,6 +166,7 @@ function handleProfileSubmit(userData) {
     .updateUserInfo(userData.name, userData.about)
     .then((user) => {
       userInfo.setUserInfo(user);
+      updateProfilePopup.reset();
       updateProfilePopup.close();
     })
     .catch((err) => {
@@ -211,6 +213,7 @@ function handleEditAvatar(data) {
     .updateProfilePicture(data.avatar)
     .then((user) => {
       userInfo.setUserAvatar(user.avatar);
+      avatarPopup.reset();
       avatarPopup.close();
     })
     .catch((err) => {
