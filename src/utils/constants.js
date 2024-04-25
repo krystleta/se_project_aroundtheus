@@ -23,6 +23,8 @@ export const selectors = {
   savingButtonText: "Saving...",
   submitButtonSelector: ".modal__button",
   saveButtonDefaultText: "Save",
+  deletingButtonDefaultText: "Yes",
+  deletingButtonText: "Deleting...",
 }
 
 export const formValidationConfig = {

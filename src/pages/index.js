@@ -65,6 +65,7 @@ api
     );
     cardSection.renderItems();
     userInfo.setUserInfo(user);
+    userInfo.setUserAvatar(user.avatar);
   })
   .catch((err) => {
     console.error(`Error: ${err}`);
@@ -84,6 +85,7 @@ const newCardPopup = new PopupWithForm(
 );
 newCardPopup.setEventListeners();
 
+//let card;
 function renderCard(item) {
   const card = new Card(
     item,
@@ -136,18 +138,21 @@ function handleValidation(form) {
   form.enableValidation();
 }
 
-function handleAddCardFormSubmit(data) {
-  this.showButtonProgress(true);
+function handleAddCardFormSubmit(cardData) {
+  newCardPopup.showButtonProgress(true);
   api
-    .addNewCard(data.name, data.link)
+    .addNewCard(cardData.name, cardData.link)
     .then((res) => {
       const card = renderCard(res);
       cardSection.addItem(card);
+      newCardPopup.close();
     })
     .catch((err) => {
       console.error(`Error: ${err}`);
+    })
+    .finally(() => {
+      newCardPopup.showButtonProgress(false);
     });
-    this.showButtonProgress(false);
 }
 
 function handleImageClick(name, link) {
@@ -155,37 +160,45 @@ function handleImageClick(name, link) {
 }
 
 function handleProfileSubmit(userData) {
-  this.showButtonProgress(true);
+  updateProfilePopup.showButtonProgress(true);
   api
     .updateUserInfo(userData.name, userData.about)
     .then((user) => {
       userInfo.setUserInfo(user);
+      updateProfilePopup.close();
     })
     .catch((err) => {
       console.error(`Error: ${err}`);
+    })
+    .finally(() => {
+      updateProfilePopup.showButtonProgress(false);
     });
-    this.showButtonProgress(false);
 }
 
-function handleDeleteCard(_id) {
+function handleDeleteCard(cardData) {
   deletePopup.open();
   deletePopup.setSubmitAction(() => {
+    deletePopup.showButtonProgress(true);
     api
-      .deleteCard(_id)
+      .deleteCard(cardData._id)
       .then((res) => {
-        this.handleRemoveCard();
+        cardData.handleRemoveCard();
+        deletePopup.close();
       })
       .catch((err) => {
         console.error(`Error: ${err}`);
+      })
+      .finally(() => {
+        deletePopup.showButtonProgress(false);
       });
   });
 }
 
-function handleLikeIcon(_id, _isLiked) {
+function handleLikeIcon(cardData) {
   api
-    .setLike(_id, _isLiked)
+    .setLike(cardData._id, cardData._isLiked)
     .then((res) => {
-      this.handleLikeIcon(res.isLiked);
+      cardData.handleLikeIcon(res.isLiked);
     })
     .catch((err) => {
       console.error(`Error: ${err}`);
@@ -193,14 +206,17 @@ function handleLikeIcon(_id, _isLiked) {
 }
 
 function handleEditAvatar(data) {
-  this.showButtonProgress(true);
+  avatarPopup.showButtonProgress(true);
   api
     .updateProfilePicture(data.avatar)
     .then((user) => {
       userInfo.setUserAvatar(user.avatar);
+      avatarPopup.close();
     })
     .catch((err) => {
       console.error(`Error: ${err}`);
+    })
+    .finally(() => {
+      avatarPopup.showButtonProgress(false);
     });
-    this.showButtonProgress(false);
 }
